@@ -30,7 +30,8 @@ public class MainActivity extends Activity {
 
             String bmiInterpretation = interpretBMI(bmiValue);
 
-            resultText.setText(bmiValue + "-" + bmiInterpretation);
+            //resultText.setText(bmiValue + " - " + bmiInterpretation);
+            resultText.setText(bmiInterpretation);
         }
     }
 
