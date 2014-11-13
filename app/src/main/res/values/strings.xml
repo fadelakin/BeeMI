@@ -5,4 +5,14 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="weightLabel">Your Weight (lbs)</string>
+    <string name="heightLabel">Your Height (feet)</string>
+    <string name="calculateButton">Calculate</string>
+
+    <string name="weightHint">Enter your weight</string>
+    <string name="heightHint">Enter your height</string>
+
+    <string name="emptyString"></string>
+
+
 </resources>
