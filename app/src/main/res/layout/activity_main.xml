@@ -11,14 +11,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/weightLabel"
-        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/text_size"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/weightText"
         android:inputType="numberDecimal"
-        android:hint="@string/weightHint">
+        android:hint="@string/weightHint"
+        android:textSize="@dimen/text_size">
         <requestFocus/>
         </EditText>
 
@@ -27,26 +29,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/heightLabel"
-        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/text_size"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/heightText"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/text_size"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/calculateButton"
-        android:onClick="calculateClickHandler"
-        android:text="@string/calculateButton"/>
+        android:onClick="calculate"
+        android:text="@string/calculateButton"
+        android:textSize="@dimen/text_size"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/resultLabel"
         android:text="@string/emptyString"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/text_size"/>
 
 </LinearLayout>
