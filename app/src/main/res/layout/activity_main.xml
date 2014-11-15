@@ -42,6 +42,15 @@
         android:textSize="@dimen/text_size"
         android:textColor="#ffffffff"/>
 
+    <com.fisheradelakin.beemi.MyNumberPicker
+        android:id="@+id/numberPicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        max="100"
+        min="1"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
