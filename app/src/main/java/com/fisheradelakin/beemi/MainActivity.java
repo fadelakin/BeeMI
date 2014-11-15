@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.NumberPicker;
 import android.widget.TextView;
 
 
@@ -19,11 +20,17 @@ public class MainActivity extends Activity {
 
     public void calculate(View v) {
         if(v.getId() == R.id.calculateButton) {
-            EditText weightText = (EditText) findViewById(R.id.weightText);
+            //EditText weightText = (EditText) findViewById(R.id.weightText);
             EditText heightText = (EditText) findViewById(R.id.heightText);
             TextView resultText = (TextView) findViewById(R.id.resultLabel);
 
-            float weight = Float.parseFloat(weightText.getText().toString());
+            NumberPicker weightPicker = (NumberPicker) findViewById(R.id.numberPicker1);
+
+            //float weight = Float.parseFloat(weightText.getText().toString());
+
+            //int pickedValue = weightPicker.getValue();
+
+            int weight = weightPicker.getValue();
             float height = Float.parseFloat(heightText.getText().toString());
 
             float bmiValue = calculateBMI(weight, height);
